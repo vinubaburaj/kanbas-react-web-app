@@ -4,19 +4,6 @@
     height: 100%;
 }
 
-.wd-flex-account {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 20px;
-    padding-top: 10px;
-}
-
-.wd-flex-account-options {
-    display: flex;
-    flex-direction: row;
-}
-
 .wd-account-profile {
     margin-left: 20px;
 }
@@ -51,8 +38,7 @@
     font-size: small;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
 
@@ -62,11 +48,11 @@ body {
 }
 
 .wd-bg-grey {
-    color: grey;
+    color:grey;
 }
 
 .wd-bg-red {
-    color: red;
+    color:red;
 }
 
 .wd-fg-black {
@@ -78,7 +64,7 @@ body {
 }
 
 .wd-fg-white {
-    color: white;
+    color:white;
 }
 
 .wd-home-nav-icon {
@@ -94,6 +80,8 @@ body {
 .wd-account-navbar {
     text-align: left;
     width: 190px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .wd-account-navbar ul {
@@ -118,14 +106,6 @@ body {
     font-size: larger;
 }
 
-.wd-account-profile-edit-button {
+.wd-account-edit-profile {
     margin-left: 20px;
-}
-
-.fg-size-larger {
-    font-size: larger;
-}
-
-.wd-no-decoration {
-    text-decoration: none;
 }

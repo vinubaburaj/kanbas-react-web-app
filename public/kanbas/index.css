@@ -29,7 +29,8 @@
     font-size: small;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -39,11 +40,11 @@ html, body {
 }
 
 .wd-bg-grey {
-    color:grey;
+    color: grey;
 }
 
 .wd-bg-red {
-    color:red;
+    color: red;
 }
 
 .wd-fg-red {
@@ -51,7 +52,7 @@ html, body {
 }
 
 .wd-fg-white {
-    color:white;
+    color: white;
 }
 
 .wd-home-nav-icon {
