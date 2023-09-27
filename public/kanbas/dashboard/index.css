@@ -72,3 +72,32 @@ body {
 .wd-flex-navbar .wd-home-nav-active a {
     color: red;
 }
+
+.wd-dashboard-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card {
+    width: 270px;
+    /* margin-bottom: 40px; */
+}
+
+.col {
+    margin-bottom: 30px;
+}
+
+.wd-dashboard-screen {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.wd-dashboard-header {
+    font-size: larger;
+    color:grey;
+}
+
+.wd-dashboard-published-courses {
+    margin-left: 10px;
+}

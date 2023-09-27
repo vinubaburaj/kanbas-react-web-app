@@ -67,9 +67,9 @@ html, body {
     color:white;
 }
 
-.wd-home-nav-icon {
+/* .wd-home-nav-icon {
     margin-bottom: 5px;
-}
+} */
 
 .wd-home-nav-text {
     margin-bottom: 10px;
@@ -108,4 +108,12 @@ html, body {
 
 .wd-account-edit-profile {
     margin-left: 20px;
+}
+
+.wd-flex-navbar .wd-home-nav-active {
+    background-color: white;
+}
+
+.wd-flex-navbar .wd-home-nav-active a {
+    color: red;
 }
