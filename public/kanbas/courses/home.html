@@ -7,12 +7,27 @@
     <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
     <link href="home.css" rel="stylesheet" />
+    
 
 </head>
 
 <body>
+    <div class="wd-top-navbar wd-bg-black wd-fg-white d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+        <select style="width:100%">
+            <option>Dashboard</option>
+            <option>Account</option>
+            <option selected>Courses</option>
+            <option>Calendar</option>
+            <option>Inbox</option>
+            <option>Studio</option>
+            <option>Commons</option>
+            <option>History</option>
+            <option>Help</option>
+        </select>
+
+    </div>
     <div class="wd-main-layout">
-        <div class="wd-flex-navbar">
+        <div class="wd-flex-navbar d-none d-md-block">
             <ul>
                 <li class="wd-bg-white"><img src="/images/northeastern_logo.png"></li>
 
@@ -72,7 +87,7 @@
             <!-- Flex row -->
             <div class="wd-courses-content">
 
-                <div class="wd-flex-courses-navbar">
+                <div class="wd-flex-courses-navbar d-none d-md-block">
 
 
                     <ul>
@@ -291,7 +306,7 @@
                     </div>
                 </div>
 
-                <div class="wd-flex-course-status">
+                <div class="wd-flex-course-status d-none d-xl-block">
                     Course Status
                     <div class="wd-course-status-buttons">
                         <button class="btn wd-bg-lightgray"><i class="fa fa-ban" aria-hidden="true"></i>
@@ -323,129 +338,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <table width="100%">
-        <td>
-            <ul>
-                <li><a href="account.html">Account</a></li>
-                <li><a href="dashboard/index.html">Dashboard</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="assignments/index.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="grades.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="settings/index.html">Settings</a></li>
-            </ul>
-        </td>  
-        <td>
-            <button>Collapse All</button>
-            <button>View Progress</button>
-            <select>
-                <option>Publish All</option>
-            </select>
-            <button>Module</button>
-            <table id="course-weeks">
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Week 0 - INTRO</li>
-                            <ul>
-                                <li>LEARNING OBJECTIVES</li>
-                                <ul>
-                                    <li>Introduction to the course</li>
-                                    <li>Learn what is Web Development</li>
-                                    <li>Creating a development environment</li>
-                                    <li>Creating a Web Application</li>
-                                    <li>Getting started with the 1st assignment</li>
-                                </ul>
-                                <li>READING</li>
-                                <ul>
-                                    <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                    <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                                </ul>
-                                <li>SLIDES</li>
-                                <ul>
-                                    <li>Introduction to Web Development Links to an external site.</li>
-                                    <li>Creating an HTTP server with Node.js Links to an external site.</li>
-                                    <li>Creating a React Application Links to an external site.</li>
-                                </ul>
-                            </ul>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Week 1 - HTML</li>
-                            <ul>
-                                <li>LEARNING OBJECTIVES</li>
-                                <ul>
-                                    <li>Learn how to create user interfaces with HTML</li>
-                                    <li>Keep working on assignment 1</li>
-                                    <li>Deploy the assignment to Netlify</li>
-                                </ul>
-                                <li>READING</li>
-                                <ul>
-                                    <li>Full Stack Developer - Chapter 1 - Introduction</li>
-                                    <li>Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</li>
-                                </ul>
-                            </ul>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </td>
-        <td>
-            <table id="course-status">
-                <tr>
-                    <h3>Course Status</h3>
-                    <button>Unpublish</button>
-                    <button>Published</button>
-                    <ul>
-                        <li>Import Existing Content</li>
-                        <li>Import from Commons</li>
-                        <li>Choose Home Page</li>
-                        <li>View Course Stream</li>
-                        <li>New Announcement</li>
-                        <li>New Analytics</li>
-                        <li>View Course Notifications</li>
-                    </ul>
-                </tr>
-                <tr>
-                    <h3>Coming Up</h3>
-                    View Calendar
-                    <ul>
-                        <li>Lecture CS4550.12631.202410 Sep 7 at 11:45am</li>
-                        <li>Lecture CS4550.12631.202410 Sep 11 att 11:45am</li>
-                        <li>CS5610 06 SP23 Lecture Sep 11 at 6pm</li>
-                    </ul>
-                </tr>
-            </table>
-        </td>
-    </table>   -->
 </body>
 
 </html>

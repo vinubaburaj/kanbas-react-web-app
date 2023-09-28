@@ -1,5 +1,5 @@
 .wd-flex-navbar {
-    width: 85px;
+    /* width: 85px; */
     background-color: black;
     height: 100%;
 }
@@ -130,4 +130,8 @@ body {
 
 .wd-profile-name {
     padding-left: 10px;
+}
+
+.wd-bg-black {
+    background-color: black;
 }
