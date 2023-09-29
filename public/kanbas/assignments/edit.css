@@ -1,7 +1,8 @@
 .wd-flex-navbar {
-    /* width: 85px; */
+    width: 77px;
     background-color: black;
     height: 100%;
+    position: fixed;
 }
 
 .wd-flex-navbar ul {
@@ -69,13 +70,13 @@ body {
     color: red;
 }
 
-.wd-flex-course-screen {
+.wd-flex-assignment-screen {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
 }
 
-.wd-course-nav-active {
+.wd-assignment-nav-active {
     border-left: 2px solid black;
     color: black
 }
@@ -89,36 +90,58 @@ body {
     background-color: lightgray;
 }
 
-.wd-flex-courses-navbar {
+.wd-flex-assignments-navbar {
     margin-left: 20px;
+    position: relative;
+    left: 75px;
 }
 
-.wd-flex-courses-navbar ul {
+.wd-flex-assignments-navbar ul {
     padding-left: 0px;
 }
 
-.wd-flex-courses-navbar li {
+.wd-flex-assignments-navbar li {
     list-style: none;
 }
 
-.wd-flex-courses-navbar a {
+.wd-flex-assignments-navbar a {
     text-decoration: none;
     padding-left: 10px;
 }
 
-.wd-flex-course-modules {
+.wd-flex-course-assignments {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    position: relative;
+    left: 80px;
 }
 
-.wd-list-module-name {
+.wd-assignment-breadcrumb {
+    position: relative;
+    left: 80px;
+}
+
+.wd-list-assignment-type {
     background-color: lightgray;
 }
 
-.wd-list-module-element span{
-    padding-left: 50px;
+li.list-group-item.wd-list-assignment-element a {
+    text-decoration: none;
+    color:black;
 }
+
+
+.wd-list-assignment-element .wd-list-assignment-element-title {
+    font-weight: bold;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.wd-list-assignment-element .wd-list-assignment-element-desc {
+    padding-left: 10px;
+}
+
 
 .wd-fg-green {
     color: green;
@@ -136,6 +159,22 @@ body {
     background-color: black;
 }
 
-.wd-top-navbar {
+
+.wd-custom-round-border {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.wd-form-center {
     text-align: center;
+}
+
+.wd-assignment-submission-type {
+    border: 1px solid grey;
+}
+
+.wd-footer-buttons a {
+    text-decoration: none;
+    color:white;
 }
