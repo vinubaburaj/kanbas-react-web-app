@@ -15,8 +15,9 @@
 }
 
 .wd-flex-navbar li img {
-    width: 70px;
     background-color: black;
+    height:40px; 
+    width:50px;
 }
 
 .wd-main-layout {
@@ -74,6 +75,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
+    position: relative;
+    left: 75px;
 }
 
 .wd-assignment-nav-active {
@@ -92,8 +95,8 @@ body {
 
 .wd-flex-assignments-navbar {
     margin-left: 20px;
-    position: relative;
-    left: 75px;
+    position: fixed;
+    /* left: 75px; */
 }
 
 .wd-flex-assignments-navbar ul {
@@ -112,14 +115,8 @@ body {
 .wd-flex-course-assignments {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
     position: relative;
-    left: 80px;
-}
-
-.wd-assignment-breadcrumb {
-    position: relative;
-    left: 80px;
+    left: 200px;
 }
 
 .wd-list-assignment-type {

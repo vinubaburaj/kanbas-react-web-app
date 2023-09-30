@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <title>Kanbas</title>
         <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
-        <link href="account.css" rel="stylesheet" />
         <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="index.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -16,13 +16,13 @@
                         <img src="/images/northeastern_logo.png" />
                     </li>
 
-                    <li class="wd-bg-white">
-                        <a class="wd-fg-red" href="account.html"
-                            ><i class="fa fa-user fa-2x wd-bg-grey" aria-hidden="true"></i
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../account/account.html"
+                            ><i class="fa fa-user fa-2x wd-fg-white" aria-hidden="true"></i
                         ></a>
                     </li>
-                    <li class="wd-bg-white wd-home-nav-text">
-                        <a class="wd-fg-red" href="account.html">Account</a>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../account/account.html">Account</a>
                     </li>
 
                     <li class="wd-home-nav-icon">
@@ -34,12 +34,12 @@
                         <a class="wd-fg-white" href="../dashboard/index.html">Dashboard</a>
                     </li>
 
-                    <li class="wd-home-nav-icon">
+                    <li class="wd-home-nav-icon wd-home-nav-active">
                         <a class="wd-fg-white" href="../courses/home.html"
                             ><i class="fa fa-book fa-2x wd-bg-red" aria-hidden="true"></i
                         ></a>
                     </li>
-                    <li class="wd-home-nav-text">
+                    <li class="wd-home-nav-text wd-home-nav-active">
                         <a class="wd-fg-white" href="../courses/home.html">Courses</a>
                     </li>
 
@@ -100,18 +100,57 @@
                 </ul>
             </div>
 
-            <div class="wd-account-navbar">
-                <ul>
-                    <li><a class="wd-fg-red" href="#">Notifications</a></li>
-                    <li><a class="wd-fg-red" href="../profile/index.html">Profile</a></li>
-                    <li><a class="wd-fg-red" href="#">Files</a></li>
-                    <li><a class="wd-fg-red" href="#">Settings</a></li>
-                    <li><a class="wd-fg-red" href="#">ePortfolios</a></li>
-                    <li><a class="wd-fg-red" href="#">Shared Content</a></li>
-                    <li><a class="wd-fg-red" href="#">The Hub</a></li>
-                    <li><a class="wd-fg-red" href="#">Qwickly Course Tools</a></li>
-                    <li><a class="wd-fg-red" href="#">Global Announcements</a></li>
-                </ul>
+            <!-- Flex column -->
+            <div class="wd-flex-course-screen">
+                <div class="wd-course-breadcrumb ms-2">
+                    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <i class="fa fa-bars" aria-hidden="true"></i> CS5610 2142 Web
+                                Development
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                Course Navigation
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <hr />
+
+                <!-- Flex row -->
+                <div class="wd-courses-content">
+                    <div class="wd-flex-courses-navbar">
+                        <ul>
+                            <li><a class="wd-fg-red" href="../courses/home.html">Home</a></li>
+                            <li><a class="wd-fg-red" href="#">Modules</a></li>
+                            <li><a class="wd-fg-red" href="#">Piazza</a></li>
+                            <li><a class="wd-fg-red" href="#">Zoom Meetings</a></li>
+                            <li>
+                                <a class="wd-fg-red" href="../assignments/index.html"
+                                    >Assignments</a
+                                >
+                            </li>
+                            <li><a class="wd-fg-red" href="#">Quizzes</a></li>
+                            <li>
+                                <a class="wd-fg-red" href="../grades/index.html">Grades</a>
+                            </li>
+                            <li><a class="wd-fg-red" href="#">People</a></li>
+                            <li><a class="wd-fg-red" href="#">Panopto Video</a></li>
+                            <li><a class="wd-fg-red" href="#">Discussions</a></li>
+                            <li><a class="wd-fg-red" href="#">Announcements</a></li>
+                            <li><a class="wd-fg-red" href="#">Pages</a></li>
+                            <li><a class="wd-fg-red" href="#">Files</a></li>
+                            <li><a class="wd-fg-red" href="#">Rubrics</a></li>
+                            <li><a class="wd-fg-red" href="#">Outcomes</a></li>
+                            <li><a class="wd-fg-red" href="#">Collaborations</a></li>
+                            <li><a class="wd-fg-red" href="#">Syllabus</a></li>
+                            <li>
+                                <a class="wd-fg-red" href="course-details.html">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

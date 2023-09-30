@@ -1,7 +1,8 @@
 .wd-flex-navbar {
-    /* width: 85px; */
+    width: 77px;
     background-color: black;
     height: 100%;
+    position: fixed;
 }
 
 .wd-flex-navbar ul {
@@ -14,8 +15,9 @@
 }
 
 .wd-flex-navbar li img {
-    width: 70px;
     background-color: black;
+    height: 40px;
+    width: 50px;
 }
 
 .wd-main-layout {
@@ -33,7 +35,6 @@ html,
 body {
     height: 100%;
 }
-
 
 .wd-bg-white {
     background-color: white;
@@ -72,12 +73,14 @@ body {
 .wd-flex-course-screen {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    position: relative;
+    left: 75px;
 }
 
 .wd-course-nav-active {
     border-left: 2px solid black;
-    color: black
+    color: black;
 }
 
 .wd-courses-content {
@@ -91,6 +94,7 @@ body {
 
 .wd-flex-courses-navbar {
     margin-left: 20px;
+    position: fixed;
 }
 
 .wd-flex-courses-navbar ul {
@@ -109,14 +113,20 @@ body {
 .wd-flex-course-modules {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    position: relative;
+    left: 180px;
+}
+
+.wd-flex-course-status {
+    position: relative;
+    left: 180px;
 }
 
 .wd-list-module-name {
     background-color: lightgray;
 }
 
-.wd-list-module-element span{
+.wd-list-module-element span {
     padding-left: 50px;
 }
 
@@ -138,4 +148,9 @@ body {
 
 .wd-top-navbar {
     text-align: center;
+}
+
+.wd-list-module-element span a {
+    text-decoration: none;
+    color: red;
 }

@@ -28,8 +28,9 @@
 }
 
 .wd-flex-navbar li img {
-    width: 70px;
     background-color: black;
+    height:40px; 
+    width:50px;
 }
 
 
@@ -110,10 +111,15 @@ html, body {
     margin-left: 20px;
 }
 
-.wd-flex-navbar .wd-home-nav-active {
+/* .wd-flex-navbar .wd-home-nav-active {
     background-color: white;
-}
+} */
 
 .wd-flex-navbar .wd-home-nav-active a {
     color: red;
 }
+
+.wd-fg-lightgrey {
+    color: lightgrey;
+}
+
