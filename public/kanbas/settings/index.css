@@ -165,4 +165,8 @@ li.list-group-item.wd-list-assignment-element a {
     color:red;
 }
 
+.table td {
+    padding-left: 10px;
+}
+
 
