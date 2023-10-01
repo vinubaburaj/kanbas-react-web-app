@@ -93,7 +93,7 @@ body {
 }
 
 .wd-flex-assignments-navbar {
-    margin-left: 20px;
+    margin-left: 10px;
     position: fixed;
 }
 
@@ -166,7 +166,7 @@ li.list-group-item.wd-list-assignment-element a {
     border: 1px solid grey;
 }
 
-.wd-footer-buttons a {
+.wd-footer .wd-footer-buttons a {
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }

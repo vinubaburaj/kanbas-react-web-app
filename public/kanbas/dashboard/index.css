@@ -98,7 +98,7 @@ body {
 }
 
 .wd-dashboard-header {
-    font-size: larger;
+    font-size: x-large;
     color:grey;
 }
 
@@ -108,4 +108,8 @@ body {
 
 .row .col a {
     text-decoration: none;
+}
+
+.card .card-body .card-title {
+    color: #0066ff;
 }

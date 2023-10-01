@@ -14,8 +14,9 @@
 }
 
 .wd-flex-navbar li img {
-    width: 70px;
     background-color: black;
+    height:40px; 
+    width:50px;
 }
 
 .wd-main-layout {

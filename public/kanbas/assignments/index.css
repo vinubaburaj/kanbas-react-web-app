@@ -94,7 +94,7 @@ body {
 }
 
 .wd-flex-assignments-navbar {
-    margin-left: 20px;
+    margin-left: 10px;
     position: fixed;
     /* left: 75px; */
 }
@@ -161,4 +161,8 @@ li.list-group-item.wd-list-assignment-element a {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 2px;
+}
+
+.wd-course-assignments-info .wd-list-assignment-element {
+    border-left: 4px solid green;
 }
