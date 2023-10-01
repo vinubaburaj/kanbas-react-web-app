@@ -7,9 +7,9 @@
 .wd-flex-account {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-left: 20px;
-    padding-top: 10px;
+    width: 90%;
+    position: relative;
+    left: 75px;
 }
 
 .wd-flex-account-options {
@@ -18,7 +18,10 @@
 }
 
 .wd-account-profile {
-    margin-left: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    left: 230px;
 }
 
 .wd-profile-name {
@@ -26,9 +29,10 @@
 }
 
 .wd-flex-navbar {
-    width: 85px;
+    width: 77px;
     background-color: black;
     height: 100%;
+    position: fixed;
 }
 
 .wd-flex-navbar ul {
@@ -41,10 +45,10 @@
 }
 
 .wd-flex-navbar li img {
-    width: 70px;
     background-color: black;
+    height: 40px;
+    width: 50px;
 }
-
 
 .wd-flex-navbar a {
     text-decoration: none;
@@ -55,7 +59,6 @@ html,
 body {
     height: 100%;
 }
-
 
 .wd-bg-white {
     background-color: white;
@@ -92,8 +95,8 @@ body {
 }
 
 .wd-account-navbar {
-    text-align: left;
-    width: 190px;
+    margin-left: 20px;
+    position: fixed;
 }
 
 .wd-account-navbar ul {
@@ -119,7 +122,20 @@ body {
 }
 
 .wd-account-profile-edit-button {
-    margin-left: 20px;
+    position: relative;
+    left: 50px;
+}
+
+.wd-account-profile-edit {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 230px;
+}
+
+.abcd {
+    position: relative;
+    left: 250px;
 }
 
 .fg-size-larger {

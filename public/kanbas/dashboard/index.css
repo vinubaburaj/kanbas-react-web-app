@@ -2,6 +2,7 @@
     width: 85px;
     background-color: black;
     height: 100%;
+    position: fixed;
 }
 
 .wd-flex-navbar ul {
@@ -14,8 +15,9 @@
 }
 
 .wd-flex-navbar li img {
-    width: 70px;
     background-color: black;
+    height:40px; 
+    width:50px;
 }
 
 .wd-main-layout {
@@ -76,7 +78,9 @@ body {
 .wd-dashboard-screen {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
+    position: relative;
+    left: 75px;
 }
 
 .card {
@@ -100,4 +104,8 @@ body {
 
 .wd-dashboard-published-courses {
     margin-left: 10px;
+}
+
+.row .col a {
+    text-decoration: none;
 }

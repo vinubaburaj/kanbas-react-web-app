@@ -1,106 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Kanbas</title>
+        <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+        <link href="index.css" rel="stylesheet" />
+        <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Kanbas</title>
-    <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
-    <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
-</head>
+    <body>
+        <div class="wd-main-layout">
+            <div class="wd-flex-navbar">
+                <ul>
+                    <li class="wd-bg-black mb-2 mt-2">
+                        <img src="/images/northeastern_logo.png" />
+                    </li>
 
-<body>
+                    <li class="wd-bg-white">
+                        <a class="wd-fg-red" href="account.html"
+                            ><i class="fa fa-user fa-2x wd-bg-grey" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-bg-white wd-home-nav-text">
+                        <a class="wd-fg-red" href="account.html">Account</a>
+                    </li>
 
-    <div class="wd-main-layout">
-        <div class="wd-flex-navbar">
-            <ul>
-                <li class="wd-bg-white"><img src="/images/northeastern_logo.png"></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../dashboard/index.html"
+                            ><i class="fa fa-tachometer fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../dashboard/index.html">Dashboard</a>
+                    </li>
 
-                <li class="wd-bg-white"><a class="wd-fg-red" href="../account/account.html"><i
-                            class="fa fa-user fa-2x wd-bg-grey" aria-hidden="true"></i></li>
-                <li class="wd-bg-white wd-home-nav-text">Account</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../courses/home.html"
+                            ><i class="fa fa-book fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../courses/home.html">Courses</a>
+                    </li>
 
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i class="fa fa-tachometer fa-2x wd-bg-red"
-                            aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Dashboard</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-calendar fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Calendar</a>
+                    </li>
 
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="courses.html"><i
-                            class="fa fa-book fa-2x wd-bg-red" aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Courses</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-inbox fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Inbox</a>
+                    </li>
 
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i class="fa fa-calendar fa-2x wd-bg-red"
-                            aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Calendar</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-history fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">History</a>
+                    </li>
 
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i class="fa fa-inbox fa-2x wd-bg-red"
-                            aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Inbox</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-desktop fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Studio</a>
+                    </li>
 
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i class="fa fa-history fa-2x wd-bg-red"
-                            aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">History</a></li>
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i
+                                class="fa fa-arrow-circle-o-right fa-2x wd-bg-red"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text"><a class="wd-fg-white" href="#">Commons</a></li>
 
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i class="fa fa-desktop fa-2x wd-bg-red"
-                            aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Studio</a></li>
-
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i
-                            class="fa fa-arrow-circle-o-right fa-2x wd-bg-red" aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Commons</a></li>
-
-                <li class="wd-home-nav-icon"><a class="wd-fg-white" href="#"><i
-                            class="fa fa-question-circle fa-2x wd-bg-red" aria-hidden="true"></i></li>
-                <li class="wd-home-nav-text">Help</a></li>
-            </ul>
-        </div>
-        <div class="wd-flex-account">
-            <div class="wd-account-header">
-                <i class="fa fa-bars" aria-hidden="true"><span class="wd-profile-name wd-text-larger">Vinu Baburaj's
-                        Profile</span></i>
-                <hr />
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-question-circle fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Help</a>
+                    </li>
+                </ul>
             </div>
-            <div class="wd-flex-account-options">
-                <div class="wd-account-navbar">
-                    <ul>
-                        <li><a class="wd-fg-red" href="#">Notifications</a></li>
-                        <li class="wd-account-active"><a class="wd-fg-black" href="index.html">Profile</a></li>
-                        <li><a class="wd-fg-red" href="#">Files</a></li>
-                        <li><a class="wd-fg-red" href="#">Settings</a></li>
-                        <li><a class="wd-fg-red" href="#">ePortfolios</a></li>
-                        <li><a class="wd-fg-red" href="#">Shared Content</a></li>
-                        <li><a class="wd-fg-red" href="#">The Hub</a></li>
-                        <li><a class="wd-fg-red" href="#">Qwickly Course Tools</a></li>
-                        <li><a class="wd-fg-red" href="#">Global Announcements</a></li>
-                    </ul>
+
+            <div class="wd-flex-account">
+                <div class="wd-account-header ms-2">
+                    <i class="fa fa-bars" aria-hidden="true"
+                        ><span class="wd-profile-name wd-text-larger"
+                            >Vinu Baburaj's Profile</span
+                        ></i
+                    >
+                    <hr />
                 </div>
-                <div class="wd-account-profile">
-                    <i class="fa fa-user fa-5x wd-bg-grey" aria-hidden="true"></i>
-                    <h2> Vinu Baburaj </h2>
-                    <br />
-                    <br />
-                    <span class="wd-text-larger"> Contact </span>
-                    <br />
-                    No registered services, you can add some on the settings page.
-                    <br />
-                    <br />
-                    <span class="wd-text-larger"> Biography </span>
-                    <br />
-                    Computer Science Student, Software Developer
-                    <br />
-                    <br />
-                    <span class="wd-text-larger"> Links </span>
-                    <br />
-                    <a class="wd-fg-red" href="https://www.youtube.com/watch?v=9XsRrm-VKj4&t=4674s"
-                        style="text-decoration: none;"> YouTube <i class="fa fa-external-link"
-                            aria-hidden="true"></i></a>
-                </div>
-                <div class="wd-account-profile-edit-button">
-                    <button class="btn btn-secondary float-end"><a class="wd-fg-white wd-no-decoration"
-                            href="edit.html"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</a></button>
+                <!-- Flex row -->
+                <div class="wd-flex-account-options">
+                    <div class="wd-account-navbar">
+                        <ul>
+                            <li><a class="wd-fg-red" href="#">Notifications</a></li>
+                            <li class="wd-account-active">
+                                <a class="wd-fg-black" href="index.html">Profile</a>
+                            </li>
+                            <li><a class="wd-fg-red" href="#">Files</a></li>
+                            <li><a class="wd-fg-red" href="#">Settings</a></li>
+                            <li><a class="wd-fg-red" href="#">ePortfolios</a></li>
+                            <li><a class="wd-fg-red" href="#">Shared Content</a></li>
+                            <li><a class="wd-fg-red" href="#">The Hub</a></li>
+                            <li><a class="wd-fg-red" href="#">Qwickly Course Tools</a></li>
+                            <li><a class="wd-fg-red" href="#">Global Announcements</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="wd-account-profile col-8">
+                        <i
+                            class="fa fa-user fa-5x wd-bg-grey"
+                            aria-hidden="true"
+                            style="width: 50px"
+                        ></i>
+                        <h2>Vinu Baburaj</h2>
+                        <br />
+                        <br />
+                        <span class="wd-text-larger"> Contact </span>
+                        <br />
+                        No registered services, you can add some on the settings page.
+                        <br />
+                        <br />
+                        <span class="wd-text-larger"> Biography </span>
+                        <br />
+                        Computer Science Student, Software Developer
+                        <br />
+                        <br />
+                        <span class="wd-text-larger"> Links </span>
+                        <br />
+                        <a
+                            class="wd-fg-red"
+                            href="https://www.youtube.com/watch?v=9XsRrm-VKj4&t=4674s"
+                            style="text-decoration: none"
+                        >
+                            YouTube <i class="fa fa-external-link" aria-hidden="true"></i
+                        ></a>
+                    </div>
+
+                    <div class="wd-account-profile-edit-button">
+                        <!-- <button class="btn btn-secondary float-end"><a class="wd-fg-white wd-no-decoration"
+                            href="edit.html"><i class="fa fa-pencil" aria-hidden="true"></i> Edit Profile</a></button> -->
+
+                        <a href="edit.html" class="wd-no-decoration"
+                            ><button class="btn btn-secondary">Edit Profile</button></a
+                        >
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
