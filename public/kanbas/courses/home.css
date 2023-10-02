@@ -154,3 +154,11 @@ body {
     text-decoration: none;
     color: red;
 }
+
+.wd-list-module-title {
+    border-left: 3px solid green;
+}
+
+.wd-list-module-element {
+    border-left: 3px solid green;
+}

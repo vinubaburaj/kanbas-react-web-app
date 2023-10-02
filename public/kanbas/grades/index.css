@@ -157,3 +157,7 @@ li.list-group-item.wd-list-assignment-element a {
     border-radius: 5px;
     padding: 2px;
 }
+
+.wd-export-button {
+    padding: 0px;
+}
