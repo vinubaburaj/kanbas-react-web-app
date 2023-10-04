@@ -1,0 +1,164 @@
+.wd-flex-navbar {
+    width: 77px;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+}
+
+.wd-flex-navbar ul {
+    padding-left: 0px;
+}
+
+.wd-flex-navbar li {
+    list-style: none;
+    text-align: center;
+}
+
+.wd-flex-navbar li img {
+    background-color: black;
+    height: 40px;
+    width: 50px;
+}
+
+.wd-main-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.wd-flex-navbar a {
+    text-decoration: none;
+    font-size: small;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wd-bg-white {
+    background-color: white;
+}
+
+.wd-bg-grey {
+    color: grey;
+}
+
+.wd-bg-red {
+    color: red;
+}
+
+.wd-fg-red {
+    color: red;
+}
+
+.wd-fg-white {
+    color: white;
+}
+
+.wd-home-nav-text {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.wd-flex-navbar .wd-home-nav-active {
+    background-color: white;
+}
+
+.wd-flex-navbar .wd-home-nav-active a {
+    color: red;
+}
+
+.wd-flex-course-screen {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+    left: 75px;
+}
+
+.wd-course-nav-active {
+    border-left: 2px solid black;
+    color: black;
+}
+
+.wd-courses-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-bg-lightgray {
+    background-color: lightgray;
+}
+
+.wd-flex-courses-navbar {
+    margin-left: 10px;
+    position: fixed;
+}
+
+.wd-flex-courses-navbar ul {
+    padding-left: 0px;
+}
+
+.wd-flex-courses-navbar li {
+    list-style: none;
+}
+
+.wd-flex-courses-navbar a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.wd-flex-course-modules {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 180px;
+}
+
+.wd-flex-course-status {
+    position: relative;
+    left: 180px;
+}
+
+.wd-list-module-name {
+    background-color: lightgray;
+}
+
+.wd-list-module-element span {
+    padding-left: 50px;
+}
+
+.wd-fg-green {
+    color: green;
+}
+
+.wd-flex-course-status {
+    padding-left: 25px;
+}
+
+.wd-profile-name {
+    padding-left: 10px;
+}
+
+.wd-bg-black {
+    background-color: black;
+}
+
+.wd-top-navbar {
+    text-align: center;
+}
+
+.wd-list-module-element span a {
+    text-decoration: none;
+    color: red;
+}
+
+.wd-list-module-title {
+    border-left: 3px solid green;
+}
+
+.wd-list-module-element {
+    border-left: 3px solid green;
+}

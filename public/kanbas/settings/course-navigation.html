@@ -1,198 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <title>Kanbas</title>
-        <style>
-            td {
-                padding-left: 10px;
-            }
-            i {
-                padding-left: 20px;
-                font-size: 0.8em;
-            }
-        </style>
-     </head>
+        <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+        <link href="/vendors/fontawesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="index.css" rel="stylesheet" />
+    </head>
 
-<body>
-    <table width="100%">
-        <td>
-            <ul>
-                <li><a href="../account.html">Account</a></li>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="../courses.html">Courses</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Inbox</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Commons</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </td>
-        <td>
-            <ul>
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="#">Modules</a></li>
-                <li><a href="#">Piazza</a></li>
-                <li><a href="#">Zoom Meetings</a></li>
-                <li><a href="../assignments/index.html">Assignments</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="../grades.html">Grades</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Panopto Video</a></li>
-                <li><a href="#">Discussions</a></li>
-                <li><a href="#">Announcements</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Rubrics</a></li>
-                <li><a href="#">Outcomes</a></li>
-                <li><a href="#">Collaborations</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="../settings/index.html">Settings</a></li>
-            </ul>
-        </td>  
-        <td>
-            <ul>
-                <li><a href="course-details.html">Course Details</a></Course></li>
-                <li><a href="course-navigation.html">Navigation</a></li>
-            </ul>
-        </td>
-        <td style="padding-left: 20px;">
-            Drag and drop items to render them in the course navigation. <br/>
-            <table width="100%" border="1" style="border-collapse: collapse;">
-            <tr>
-                <td>Home</td>
-            </tr>
-            <tr>
-                <td>Modules</td>
-            </tr>
-            <tr>
-                <td>Piazza</td>
-            </tr>
-            <tr>
-                <td>Zoom Meetings</td>
-            </tr>
-            <tr>
-                <td>Assignments</td>
-            </tr>
-            <tr>
-                <td>Quizzes</td>
-            </tr>
-            <tr>
-                <td>Grades</td>
-            </tr>
-            <tr>
-                <td>People</td>
-            </tr>
-            <tr>
-                <td>Panopto Video</td>
-            </tr>
-            </table>
-            <br/>
-            Drag items here to hide them from students. <br/>
-            Disabling most pages will cause students who visit those pages to be redirected to the course home page. <br/>
-            
-            <table width="100%" border="1" style="border-collapse: collapse;">
-                <tr>
-                    <td>
-                        Chat <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        SCORM <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Attendance <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Barnes and Noble Bookstore <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Digication <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Top Hat <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Syllabus <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Perusall <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Microsoft Teams Meetings <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        FACT Reporting and Photo Roster <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Progress Reports (Navigate) <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Microsoft Teams for Canvas <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        VHL Central <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gradescope 1.3 <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Credentials <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        iClicker <br/>
-                        <i>Page disabled won't appear in navigation</i>
-                    </td>
-                </tr>
-            </table>
-            <br/>
-            <a href="index.html"><button>Save</button></a>
-        </td>
-    </table>  
-</body>
+    <body>
+        <div class="wd-main-layout">
+            <div class="wd-flex-navbar">
+                <ul>
+                    <li class="wd-bg-black mb-2 mt-2">
+                        <img src="/images/northeastern_logo.png">
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../account/account.html"
+                            ><i class="fa fa-user fa-2x wd-fg-white" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../account/account.html">Account</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="../dashboard/index.html"
+                            ><i class="fa fa-tachometer fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="../dashboard/index.html">Dashboard</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon wd-home-nav-active">
+                        <a class="wd-fg-white" href="../courses/courses.html"
+                            ><i class="fa fa-book fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text wd-home-nav-active">
+                        <a class="wd-fg-white" href="../courses/courses.html">Courses</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-calendar fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Calendar</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-inbox fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Inbox</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-history fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">History</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-desktop fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Studio</a>
+                    </li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i
+                                class="fa fa-arrow-circle-o-right fa-2x wd-bg-red"
+                                aria-hidden="true"
+                            ></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text"><a class="wd-fg-white" href="#">Commons</a></li>
+
+                    <li class="wd-home-nav-icon">
+                        <a class="wd-fg-white" href="#"
+                            ><i class="fa fa-question-circle fa-2x wd-bg-red" aria-hidden="true"></i
+                        ></a>
+                    </li>
+                    <li class="wd-home-nav-text">
+                        <a class="wd-fg-white" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Flex column -->
+            <div class="wd-flex-course-screen">
+                <div class="wd-course-breadcrumb ms-2">
+                    <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <i class="fa fa-bars" aria-hidden="true"></i> CS5610 2142 Web
+                                Development
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <hr />
+
+                <!-- Flex row -->
+                <div class="wd-courses-content">
+                    <div class="wd-flex-courses-navbar">
+                        <ul>
+                            <li><a class="wd-fg-red" href="../courses/home.html">Home</a></li>
+                            <li><a class="wd-fg-red" href="#">Modules</a></li>
+                            <li><a class="wd-fg-red" href="#">Piazza</a></li>
+                            <li><a class="wd-fg-red" href="#">Zoom Meetings</a></li>
+                            <li>
+                                <a class="wd-fg-red" href="../assignments/index.html">Assignments</a>
+                            </li>
+                            <li><a class="wd-fg-red" href="#">Quizzes</a></li>
+                            <li>
+                                <a class="wd-fg-red" href="../grades/grades.html">Grades</a>
+                            </li>
+                            <li><a class="wd-fg-red" href="#">People</a></li>
+                            <li><a class="wd-fg-red" href="#">Panopto Video</a></li>
+                            <li><a class="wd-fg-red" href="#">Discussions</a></li>
+                            <li><a class="wd-fg-red" href="#">Announcements</a></li>
+                            <li><a class="wd-fg-red" href="#">Pages</a></li>
+                            <li><a class="wd-fg-red" href="#">Files</a></li>
+                            <li><a class="wd-fg-red" href="#">Rubrics</a></li>
+                            <li><a class="wd-fg-red" href="#">Outcomes</a></li>
+                            <li><a class="wd-fg-red" href="#">Collaborations</a></li>
+                            <li><a class="wd-fg-red" href="#">Syllabus</a></li>
+                            <li>
+                                <a class="wd-course-nav-active" href="course-details.html"
+                                    >Settings</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Flex column -->
+                    <div class="wd-flex-course-settings col-10 ms-5">
+                        <div class="wd-course-setting-navbar mb-4">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="course-details.html"
+                                        >Course Details</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sections</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="course-navigation.html"
+                                        >Navigation</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Apps</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Feature Options</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Integrations</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="wd-course-details-content">
+                            <span class="mb-4">
+                                Drag and drop items to render them in the course navigations
+                            </span>
+                            <br />
+                            <div class="table-responsive col-6 mb-2">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Home</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Modules
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Piazza
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Zoom Meetings
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Assignments
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Quizzes
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Grades
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                People
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Panopto Video
+                                                <i
+                                                    class="fa fa-ellipsis-v float-end"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                Drag items here to hide them from students. <br />
+                                Disabling most pages will cause students who visit those pages to be
+                                redirected to the course home page. <br />
+
+                                <table class="table table-bordered mb-3">
+                                    <tr>
+                                        <td>
+                                            Chat <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            SCORM <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Attendance <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Barnes and Noble Bookstore <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Digication <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Top Hat <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Syllabus <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Perusall <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Microsoft Teams Meetings <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            FACT Reporting and Photo Roster <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Progress Reports (Navigate) <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Microsoft Teams for Canvas <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            VHL Central <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Gradescope 1.3 <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Credentials <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            iClicker <br />
+                                            <i class="ps-3"
+                                                >Page disabled won't appear in navigation</i
+                                            >
+                                            <i
+                                                class="fa fa-ellipsis-v float-end"
+                                                aria-hidden="true"
+                                            ></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="wd-footer-buttons mb-2">
+                                <button class="btn btn-danger">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

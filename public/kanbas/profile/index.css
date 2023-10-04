@@ -1,0 +1,147 @@
+.wd-main-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.wd-flex-account {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+    left: 75px;
+}
+
+.wd-flex-account-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-account-profile {
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    left: 230px;
+}
+
+.wd-profile-name {
+    padding-left: 20px;
+}
+
+.wd-flex-navbar {
+    width: 77px;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+}
+
+.wd-flex-navbar ul {
+    padding-left: 0px;
+}
+
+.wd-flex-navbar li {
+    list-style: none;
+    text-align: center;
+}
+
+.wd-flex-navbar li img {
+    background-color: black;
+    height: 40px;
+    width: 50px;
+}
+
+.wd-flex-navbar a {
+    text-decoration: none;
+    font-size: small;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wd-bg-white {
+    background-color: white;
+}
+
+.wd-bg-grey {
+    color: grey;
+}
+
+.wd-bg-red {
+    color: red;
+}
+
+.wd-fg-black {
+    color: black;
+}
+
+.wd-fg-red {
+    color: red;
+}
+
+.wd-fg-white {
+    color: white;
+}
+
+/* .wd-home-nav-icon {
+    margin-bottom: 5px;
+} */
+
+.wd-home-nav-text {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.wd-account-navbar {
+    margin-left: 10px;
+    position: fixed;
+}
+
+.wd-account-navbar ul {
+    padding-left: 0px;
+}
+
+.wd-account-navbar li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.wd-account-navbar a {
+    text-decoration: none;
+    padding-left: 8px;
+}
+
+.wd-account-active {
+    border-left: 2px solid black;
+}
+
+.wd-text-larger {
+    font-size: larger;
+}
+
+.wd-account-profile-edit-button {
+    position: relative;
+    left: 50px;
+}
+
+.wd-account-profile-edit {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 230px;
+}
+
+.abcd {
+    position: relative;
+    left: 250px;
+}
+
+.fg-size-larger {
+    font-size: larger;
+}
+
+.wd-no-decoration {
+    text-decoration: none;
+}

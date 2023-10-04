@@ -1,0 +1,115 @@
+.wd-flex-navbar {
+    width: 85px;
+    background-color: black;
+    height: 100%;
+    position: fixed;
+}
+
+.wd-flex-navbar ul {
+    padding-left: 0px;
+}
+
+.wd-flex-navbar li {
+    list-style: none;
+    text-align: center;
+}
+
+.wd-flex-navbar li img {
+    background-color: black;
+    height:40px; 
+    width:50px;
+}
+
+.wd-main-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.wd-flex-navbar a {
+    text-decoration: none;
+    font-size: small;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+.wd-bg-white {
+    background-color: white;
+}
+
+.wd-bg-grey {
+    color: grey;
+}
+
+.wd-bg-red {
+    color: red;
+}
+
+.wd-fg-red {
+    color: red;
+}
+
+.wd-fg-white {
+    color: white;
+}
+
+/* .wd-home-nav-icon {
+    margin-bottom: 5px;
+} */
+
+.wd-home-nav-text {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.wd-flex-navbar .wd-home-nav-active {
+    background-color: white;
+}
+
+.wd-flex-navbar .wd-home-nav-active a {
+    color: red;
+}
+
+.wd-dashboard-screen {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    position: relative;
+    left: 75px;
+}
+
+.card {
+    width: 270px;
+    /* margin-bottom: 40px; */
+}
+
+.col {
+    margin-bottom: 30px;
+}
+
+.wd-dashboard-screen {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.wd-dashboard-header {
+    font-size: x-large;
+    color:grey;
+}
+
+.wd-dashboard-published-courses {
+    margin-left: 10px;
+}
+
+.row .col a {
+    text-decoration: none;
+}
+
+.card .card-body .card-title {
+    color: #0066ff;
+}
