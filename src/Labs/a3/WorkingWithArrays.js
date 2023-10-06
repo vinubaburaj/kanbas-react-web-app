@@ -1,4 +1,12 @@
 import ArrayIndexAndLength from "./ArrayIndexAndLength";
+import AddingAndRemovingDataToFromArrays from "./AddingAndRemovingDataToFromArrays";
+import ForLoops from "./ForLoops";
+import MapFunction from "./MapFunction";
+import JsonStringify from "./JsonStringify";
+import FindFunction from "./FindFunction";
+import FindIndex from "./FindIndex";
+import FilterFunction from "./FilterFunction";
+import TemplateLiterals from "./TemplateLiterals";
 
 const WorkingWithArrays = () => {
   var functionScoped = 2;
@@ -19,6 +27,20 @@ const WorkingWithArrays = () => {
       variableArray1 = {variableArray1}
       <br />
       <ArrayIndexAndLength />
+      <br />
+      <AddingAndRemovingDataToFromArrays />
+      <br />
+      <ForLoops />
+      <br />
+      <MapFunction />
+      <br />
+      <JsonStringify />
+      <br />
+      <FindFunction />
+      <br />
+      <FindIndex />
+      <br />
+      <FilterFunction />
       <br />
     </>
   );
