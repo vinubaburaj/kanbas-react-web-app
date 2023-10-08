@@ -11,6 +11,7 @@ import Spread from "./Spread";
 import Destructing from "./Destructing";
 import FunctionDestructing from "./FunctionDestructing";
 import PathParameters from "./PathParameters";
+import DynamicStyling from "./DynamicStyling";
 
 function JavaScript() {
   console.log("Hello World");
@@ -29,7 +30,6 @@ function JavaScript() {
       <Spread />
       <Destructing />
       <FunctionDestructing />
-      <PathParameters />
     </div>
   );
 }
