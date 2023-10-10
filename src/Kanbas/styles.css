@@ -1,0 +1,13 @@
+.wd-kanbas-navigation {
+    width: 100px;
+    text-align: center;
+}
+
+.list-group {
+    background-color: black;
+}
+
+.list-group-item {
+    background-color: black;
+    color: white; 
+  }
