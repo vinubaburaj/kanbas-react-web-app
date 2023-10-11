@@ -1,6 +1,7 @@
 import KanbasNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router";
 import Dashboard from "./Dashboard";
+import Courses from "./Courses";
 import "./styles.css";
 
 function Kanbas() {
@@ -9,14 +10,14 @@ function Kanbas() {
       <div className="wd-kanbas-navigation">
         <KanbasNavigation />
       </div>
-      <div>
+      {/* <div> */}
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
           <Route path="Account" element={<h1>Account</h1>} />
           <Route path="Dashboard" element={<Dashboard />} />
-          <Route path="Courses/*" element={<h1>Courses</h1>} />
+          <Route path="Courses/:courseId/*" element={<Courses />} />
         </Routes>
-      </div>
+      {/* </div> */}
     </div>
   );
 }
