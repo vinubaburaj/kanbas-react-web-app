@@ -1,0 +1,12 @@
+.btn.wd-bg-lightgray {
+    background-color: 	#DCDCDC;
+}
+
+.list-group-item {
+    border: 2px solid black;
+}
+
+.list-group-item.wd-bg-lightgray {
+    background-color: #DCDCDC;
+    border: 2px solid gray;
+}

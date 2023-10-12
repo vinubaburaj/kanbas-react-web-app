@@ -9,6 +9,7 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import "./index.css";
 import CourseNavigation from "./CourseNavigation";
+import Modules from "./Modules";
 
 function Courses() {
   const { courseId } = useParams();
@@ -30,18 +31,18 @@ function Courses() {
       </nav>
       <hr />
       <CourseNavigation />
-      <div>
+      {/* <div> */}
         <div
           className="overflow-y-scroll position-fixed bottom-0 end-0"
           style={{
-            left: "320px",
+            left: "300px",
             top: "50px",
           }}
         >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<h1>Home</h1>} />
-            <Route path="Modules" element={<h1>Modules</h1>} />
+            <Route path="Modules" element={ <Modules /> } />
             <Route path="Assignments" element={<h1>Assignments</h1>} />
             <Route
               path="Assignments/:assignmentId"
@@ -50,7 +51,7 @@ function Courses() {
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

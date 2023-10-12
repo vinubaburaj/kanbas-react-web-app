@@ -15,3 +15,7 @@
 .d-flex {
     height:100%;
 }
+
+.wd-bg-lightgray {
+    background-color: lightgray;
+}
