@@ -1,0 +1,14 @@
+.list-group-item.wd-assignment-type {
+    font-weight: bold;
+    background-color: #f1f1f1;
+}
+
+.wd-assignment-type-right-text {
+    font-weight: 400;
+}
+
+.wd-assignment-type-weightage {
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 5px;
+}

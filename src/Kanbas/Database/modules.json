@@ -52,5 +52,30 @@
       "name": "Spacecraft Systems Engineering",
       "description": "Overview of spacecraft systems and subsystems engineering.",
       "course": "RS103"
+    },
+    {
+      "_id": "M401",
+      "name": "Introduction to HTML",
+      "description": "Introudction to basic HTML syntax and tags.",
+      "course": "RS104"
+    },
+    {
+      "_id": "M402",
+      "name": "CSS + Bootstrap",
+      "description": "Introudction to CSS style rendering and Bootstrap Library.",
+      "course": "RS104"
+    },
+    {
+      "_id": "M403",
+      "name": "Component Functions using Javascript",
+      "description": "Dividing a web page into reusable component using Javascript.",
+      "course": "RS104"
+    },
+    {
+      "_id": "M404",
+      "name": "Introduction to React",
+      "description": "Overview of React",
+      "course": "RS104"
     }
+
   ]

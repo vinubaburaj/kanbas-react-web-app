@@ -13,7 +13,7 @@ function ModuleList() {
          .filter((module) => module.course === courseId)
          .map((module, index) => (
            <li key={index} className="list-group-item wd-bg-lightgray">
-             <h4>{module.name}</h4>
+             <h5>{module.name}</h5>
              <p>{module.description}</p>
            </li>
       ))
@@ -22,3 +22,4 @@ function ModuleList() {
   );
 }
 export default ModuleList
+ 

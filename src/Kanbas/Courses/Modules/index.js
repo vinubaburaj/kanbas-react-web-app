@@ -1,6 +1,8 @@
 import ModuleList from "./ModuleList";
 import './index.css';
 import { HiOutlineEllipsisVertical } from 'react-icons/hi2';
+import { AiOutlinePlus } from 'react-icons/ai';
+
 function Modules() {
   return (
     <div className="wd-modules-screen mt-3">
@@ -10,7 +12,8 @@ function Modules() {
         <option selected>Publish All</option>
       </select>
       <button class="btn btn-danger me-1">
-        <i class="fa fa-plus" aria-hidden="true"></i> Module
+        <AiOutlinePlus />
+        Module
       </button>
       <button class="btn wd-bg-lightgray">
         <HiOutlineEllipsisVertical />

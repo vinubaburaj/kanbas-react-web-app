@@ -10,6 +10,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import "./index.css";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
+import Home from "./Home";
+import Assignments from "./Assignments";
 
 function Courses() {
   const { courseId } = useParams();
@@ -41,9 +43,9 @@ function Courses() {
         >
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<h1>Home</h1>} />
+            <Route path="Home" element={ <Home />} />
             <Route path="Modules" element={ <Modules /> } />
-            <Route path="Assignments" element={<h1>Assignments</h1>} />
+            <Route path="Assignments" element={<Assignments />} />
             <Route
               path="Assignments/:assignmentId"
               element={<h1>Assignment Editor</h1>}
