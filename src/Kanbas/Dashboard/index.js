@@ -25,7 +25,7 @@ function Dashboard() {
                 <div className="card h-100">
                   <img src={courseImage} />
                   <div className="card-body">
-                    <h6 className="card-title">{course._id}</h6>
+                    <h6 className="card-title wd-card-title">{course._id}</h6>
 
                     <div className="card-text">
                       <p className="card-text">{course.name}</p>

@@ -7,14 +7,15 @@ function ModuleList() {
   const { courseId } = useParams();
   const modules = db.modules;
   return (
-    <ul className="list-group">
+    <ul className="list-group wd-modules-list">
       {
        modules
          .filter((module) => module.course === courseId)
          .map((module, index) => (
-           <li key={index} className="list-group-item wd-bg-lightgray">
+           <li key={index} className="list-group-item wd-module-item mb-4">
              <h5>{module.name}</h5>
              <p>{module.description}</p>
+             
            </li>
       ))
     }

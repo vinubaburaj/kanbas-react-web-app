@@ -1,15 +1,17 @@
 import ModuleList from "../Modules/ModuleList";
+import CourseHeader from '../CourseHeader';
+import CourseStatus from "../CourseStatus";
 
 function Home() {
   return (
     <div className="wd-home">
-      <h3>Home</h3>
       <div className="d-flex">
-        <div>
+        <div className="w-75">
+        <CourseHeader />
           <ModuleList />
         </div>
         <div className="wd-course-status ms-4">
-          <h5>Status</h5>
+          <CourseStatus />
         </div>
       </div>
     </div>

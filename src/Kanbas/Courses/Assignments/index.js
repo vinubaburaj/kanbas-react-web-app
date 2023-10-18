@@ -13,7 +13,7 @@ function Assignments() {
     (assignment) => assignment.course === courseId
   );
   return (
-    <div>
+    <div className="me-5">
       <div class="wd-assignments-header mt-2">
         <input
           class="form-control w-25 float-start"
@@ -53,7 +53,7 @@ function Assignments() {
           <Link
             key={assignment._id}
             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-            className="list-group-item"
+            className="list-group-item wd-assignment-detail"
           >
             <HiOutlineEllipsisVertical />
             <TfiPencilAlt color="green" />
