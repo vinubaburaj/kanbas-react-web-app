@@ -77,7 +77,7 @@ function Grades() {
               );
               return (
                 <tr>
-                  <td>
+                  <td id="wd-student-name">
                     {user.firstName} {user.lastName}
                   </td>
                   {assignments.map((assignment) => {

@@ -6,3 +6,11 @@
     border-width: unset;
     text-align: center;
 }
+
+#wd-student-name {
+    color:red;
+}
+
+.table>:not(caption)>*>* {
+
+}
