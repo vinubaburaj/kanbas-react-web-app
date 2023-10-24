@@ -4,24 +4,14 @@ import db from "../Database";
 import courseImage from "../Images/course-img.jpeg";
 import "./index.css";
 
-function Dashboard() {
-  const [courses, setCourses] = useState(db.courses);
-
-  const [course, setCourse] = useState({
-    name: "New Course",
-    number: "New Number",
-    startDate: "2023-09-10",
-    endDate: "2023-12-15",
-  });
-
-  const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id: new Date().getTime() }]);
-  };
-
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
-  };
-
+function Dashboard({
+  courses,
+  course,
+  setCourse,
+  addNewCourse,
+  deleteCourse,
+  updateCourse
+}) {
   return (
     <div className="ms-5 me-2">
       <span className="wd-header">Dashboard</span>
@@ -60,6 +50,12 @@ function Dashboard() {
         <button className="btn btn-success mt-1 mb-2" onClick={addNewCourse}>
           Add
         </button>
+        <button
+          className="btn btn-primary ms-1 mt-1 mb-2"
+          onClick={updateCourse}
+        >
+          Update
+        </button>
       </div>
       <div className="list-group wd-card-group">
         <div className="row row-cols-md-4 g-4">
@@ -80,7 +76,17 @@ function Dashboard() {
                     <div className="card-text">
                       <p className="card-text">{course.name}</p>
                       <button
-                        class="btn btn-danger"
+                        className="btn btn-primary"
+                        onClick={(event) => {
+                          event.preventDefault();
+                          setCourse(course);
+                        }}
+                      >
+                        Edit
+                      </button>
+
+                      <button
+                        className="btn btn-danger"
                         onClick={(e) => {
                           e.preventDefault();
                           deleteCourse(course._id);

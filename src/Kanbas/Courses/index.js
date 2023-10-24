@@ -15,10 +15,10 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const windowLocation = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const link = windowLocation.pathname.split("/"); /* To display breadcrumbs */
   return (
     <div className="wd-course-screen">
