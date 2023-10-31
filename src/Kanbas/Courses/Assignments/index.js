@@ -5,13 +5,17 @@ import { AiOutlinePlus, AiFillCheckCircle } from "react-icons/ai";
 import { HiOutlineEllipsisVertical } from "react-icons/hi2";
 import { TfiPencilAlt } from 'react-icons/tfi'; 
 import "./index.css";
+import { useSelector, useDispatch } from "react-redux";
+import { addAssignment, updateAssignment, deleteAssignment, selectAssignment } from "./assignmentsReducer";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
+  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId
   );
+  const dispatch = useDispatch();
+  
   return (
     <div className="me-5">
       <div class="wd-assignments-header mt-2">
