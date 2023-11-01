@@ -19,9 +19,8 @@ const assignmentsSlice = createSlice({
         {
           ...action.payload,
           _id: new Date().getTime().toString(),
-          course: "RS101",
         },
-        ...state.modules,
+        ...state.assignments,
       ];
     },
     deleteAssignment: (state, action) => {

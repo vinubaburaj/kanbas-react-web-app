@@ -10,6 +10,12 @@
     font-size: larger;
 }
 
+#wd-courses-col {
+    width: 270px;
+    height: 500px; 
+}
+
 .card-title.wd-card-title{
     color: #2d5dc6;
 }
+

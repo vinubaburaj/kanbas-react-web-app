@@ -1,32 +1,24 @@
-import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { updateAssignment, selectAssignment } from "../assignmentsReducer";
+import { addAssignment, selectAssignment } from "../assignmentsReducer";
 
-function AssignmentEditor() {
-  const { assignmentId } = useParams();
-  // const assignment = db.assignments.find(
-  //   (assignment) => assignment._id === assignmentId
-  // );
-
+const AddAssignment = () => {
   const { courseId } = useParams();
   const navigate = useNavigate();
+  const assignment = useSelector(
+    (state) => state.assignmentsReducer.assignment
+  );
   const dispatch = useDispatch();
-  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
-  const assignment = useSelector((state) => state.assignmentsReducer.assignment);
-  const currentAssignment = assignments.find(a => a._id === assignmentId)
-
-  dispatch(selectAssignment(currentAssignment));
 
   const handleSave = () => {
-    dispatch(updateAssignment(assignment));
+    dispatch(addAssignment({ ...assignment, course: courseId }));
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
-  return (
-    <div className="mt-2">
-      <h6>Assignment Editor</h6>
-      <hr />
 
+  return (
+    <>
+      <h6 className="mt-2">Add New Assignment</h6>
+      <hr />
       <label className="form-label">
         Assignment Name
         <input
@@ -41,8 +33,8 @@ function AssignmentEditor() {
           }
           className="form-control"
         />
-        </label>
-        <textarea
+      </label>
+      <textarea
         onChange={(e) =>
           dispatch(
             selectAssignment({
@@ -73,18 +65,18 @@ function AssignmentEditor() {
       </div>
       <hr />
       <div className="float-end me-3">
-      <Link
-        to={`/Kanbas/Courses/${courseId}/Assignments`}
-        className="btn btn-light me-2"
-      >
-        Cancel
-      </Link>
-      <button onClick={handleSave} className="btn btn-danger me-2">
-        Save
-      </button>
+        <Link
+          to={`/Kanbas/Courses/${courseId}/Assignments`}
+          className="btn btn-light me-2"
+        >
+          Cancel
+        </Link>
+        <button className="btn btn-danger me-2" onClick={handleSave}>
+          Save
+        </button>
       </div>
-    </div>
+    </>
   );
-}
+};
 
-export default AssignmentEditor;
+export default AddAssignment;

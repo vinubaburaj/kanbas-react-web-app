@@ -15,7 +15,7 @@ function Assignments() {
     (assignment) => assignment.course === courseId
   );
   const dispatch = useDispatch();
-  
+
   return (
     <div className="me-5">
       <div class="wd-assignments-header mt-2">
@@ -29,10 +29,12 @@ function Assignments() {
             <AiOutlinePlus />
             Group
           </button>
+          <Link to={`/Kanbas/Courses/${courseId}/Assignments/addAssignment`}>
           <button class="btn btn-danger">
             <AiOutlinePlus />
             Assignment
           </button>
+          </Link>
           <button class="btn wd-bg-lightgray">
             <HiOutlineEllipsisVertical />
           </button>

@@ -60,7 +60,7 @@ function Dashboard({
       <div className="list-group wd-card-group">
         <div className="row row-cols-md-4 g-4">
           {courses.map((course) => (
-            <div className="col">
+            <div className="col" id="wd-courses-col">
               <Link
                 key={course._id}
                 to={`/Kanbas/Courses/${course._id}`}
