@@ -25,6 +25,7 @@ function AssignmentEditor() {
   return (
     <div className="mt-2">
       <h6>Assignment Editor</h6>
+      {JSON.stringify(assignment)}
       <hr />
       <label className="form-label">
         Assignment Name
@@ -55,6 +56,52 @@ function AssignmentEditor() {
           />
         </div>
       </div>
+
+      <div className="row mt-2">
+        <div className="col-2">Due</div>
+        <div className="col-4">
+          <input
+            onChange={(e) =>
+              setAssignment({ ...assignment, dueDate: e.target.value })
+            }
+            type="date"
+            value={assignment.dueDate}
+          />
+        </div>
+      </div>
+
+      <div className="row mt-2">
+        <div className="col-2">Available From</div>
+        <div className="col-4">
+          <input
+            onChange={(e) =>
+              setAssignment({
+                ...assignment,
+                availableFromDate: e.target.value,
+              })
+            }
+            type="date"
+            value={assignment.availableFromDate}
+          />
+        </div>
+      </div>
+
+      <div className="row mt-2">
+        <div className="col-2">Until</div>
+        <div className="col-4">
+          <input
+            onChange={(e) =>
+              setAssignment({
+                ...assignment,
+                availableUntilDate: e.target.value,
+              })
+            }
+            type="date"
+            value={assignment.availableUntilDate}
+          />
+        </div>
+      </div>
+
       <hr />
       <div className="float-end me-3">
         <Link
