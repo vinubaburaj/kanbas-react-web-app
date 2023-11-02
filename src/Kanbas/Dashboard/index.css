@@ -1,0 +1,15 @@
+.list-group.wd-card-group{
+    background-color: white;
+}
+
+.wd-header {
+    font-size: xx-large;
+}
+
+.wd-published-courses{
+    font-size: larger;
+}
+
+.card-title.wd-card-title{
+    color: #2d5dc6;
+}

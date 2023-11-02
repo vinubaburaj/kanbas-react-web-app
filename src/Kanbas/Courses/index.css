@@ -1,0 +1,12 @@
+.wd-breadcrumb {
+  --bs-breadcrumb-divider: ">";
+  /* aria-label: "breadcrumb"; */
+}
+
+.wd-breadcrumb-course {
+  color: red;
+}
+
+.wd-course-screen {
+    width:100%;
+}

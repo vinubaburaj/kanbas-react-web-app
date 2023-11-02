@@ -1,0 +1,19 @@
+.btn.wd-bg-lightgray {
+    background-color: 	#f1f1f1;
+}
+
+.list-group-item {
+    border: 2px solid black;
+}
+
+.list-group-item.wd-module-item {
+    background-color: #f1f1f1;
+    border: 2px solid silver !important;
+    border-radius: 0px !important;
+
+}
+
+
+.list-group.wd-modules-list {
+    background-color: white;
+}

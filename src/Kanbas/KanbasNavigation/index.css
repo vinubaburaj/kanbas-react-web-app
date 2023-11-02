@@ -1,0 +1,42 @@
+/* index.css */
+
+/* .list-group {
+    background-color: black;
+} */
+
+.wd-kanbas-navigation-list .list-group-item {
+    background-color: black;
+    color: white; 
+    border: none;
+    padding: 0px;
+  }
+
+.wd-kanbas-navigation-list .wd-icon {
+    color:red;
+    font-size: 2em;
+}
+
+.wd-kanbas-navigation-list .wd-icon.wd-account {
+    color:lightslategray;
+}
+
+/* To remove the border from first element on the navigation bar */
+.wd-kanbas-navigation-list .list-group-item:first-child {
+    border: none;
+    border-radius: 0px;
+  }
+  
+.wd-kanbas-navigation-list .list-group-item.active {
+    background-color: white;
+    color: red; 
+    /* border: none;
+    padding: 0px; */
+  }
+  
+  .wd-fg-white {
+    color: white;
+  }
+
+  .wd-kanbas-navigation-list {
+    height: 100%;
+  }
