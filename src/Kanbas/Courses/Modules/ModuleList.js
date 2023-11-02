@@ -1,8 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import "./index.css";
-import { useState } from "react";
+import { LuGripVertical } from 'react-icons/lu'
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
@@ -82,6 +81,21 @@ function ModuleList() {
             </div>
             <h5>{module.name}</h5>
             <p>{module.description}</p>
+            {
+                module.lessons && (
+                    <ul className="list-group">
+                        {
+                            module.lessons.map((lesson, index) => (
+                                <li key={index} className="list-group-item">
+                                  <LuGripVertical />
+                                    {lesson.name}
+                                    {/* <p>{lesson.description}</p> */}
+                                </li>
+                            ))
+                        }
+                    </ul>
+                )
+             }
           </li>
         ))}
     </ul>
