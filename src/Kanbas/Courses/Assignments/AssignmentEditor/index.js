@@ -25,7 +25,6 @@ function AssignmentEditor() {
   return (
     <div className="mt-2">
       <h6>Assignment Editor</h6>
-      {JSON.stringify(assignment)}
       <hr />
       <label className="form-label">
         Assignment Name
