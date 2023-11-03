@@ -10,10 +10,10 @@ function CourseHeader() {
       <select class="btn wd-bg-lightgray me-1">
         <option selected>Publish All</option>
       </select>
-      <button class="btn btn-danger me-1">
+      {/* <button class="btn btn-danger me-1">
         <AiOutlinePlus />
         Module
-      </button>
+      </button> */}
       <button class="btn wd-bg-lightgray">
         <HiOutlineEllipsisVertical />
       </button>

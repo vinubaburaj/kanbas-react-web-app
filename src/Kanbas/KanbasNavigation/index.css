@@ -39,4 +39,5 @@
 
   .wd-kanbas-navigation-list {
     height: 100%;
+    position: fixed;
   }
