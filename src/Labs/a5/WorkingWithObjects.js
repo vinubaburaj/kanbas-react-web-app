@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+
 function WorkingWithObjects() {
   const [assignment, setAssignment] = useState({
     id: 1,
@@ -11,16 +13,35 @@ function WorkingWithObjects() {
 
   const URL = "http://localhost:4000/a5/assignment";
 
+  const fetchAssignment = async () => {
+    const response = await axios.get(`${URL}`);
+    setAssignment(response.data);
+  };
+
+  const updateTitle = async () => {
+    const response = await axios.get(`${URL}/title/${assignment.title}`);
+    setAssignment(response.data);
+  };
+
+  const updateScore = async () => {
+    const response = await axios.get(`${URL}/score/${assignment.score}`);
+    setAssignment(response.data);
+  };
+
+  const updateCompleted = async (e) => {
+    const response = await axios.get(`${URL}/completed/${e.target.checked}`);
+    setAssignment(response.data);
+  };
+
+  useEffect(() => {
+    fetchAssignment();
+  }, []);
+
   return (
     <div>
       <h3>Working With Objects</h3>
       <h4>Modifying Properties</h4>
-      <a
-        href={`${URL}/title/${assignment.title}`}
-        className="btn btn-primary me-2 float-end"
-      >
-        Update Title
-      </a>
+
       <input
         onChange={(e) =>
           setAssignment({ ...assignment, title: e.target.value })
@@ -29,13 +50,10 @@ function WorkingWithObjects() {
         className="form-control mb-2 w-75"
         type="text"
       />
+      <button onClick={updateTitle} className="w-100 btn btn-primary mb-2">
+        Update Title to: {assignment.title}
+      </button>
 
-<a
-        href={`${URL}/score/${assignment.score}`}
-        className="btn btn-primary me-2 float-end"
-      >
-        Update Score
-      </a>
       <input
         onChange={(e) =>
           setAssignment({ ...assignment, score: e.target.value })
@@ -44,26 +62,36 @@ function WorkingWithObjects() {
         className="form-control mb-2 w-75"
         type="number"
       />
+      <button onClick={updateScore} className="w-100 btn btn-primary mb-2">
+        Update Score to: {assignment.score}
+      </button>
 
-<a
-        href={`${URL}/completed/${assignment.completed}`}
-        className="btn btn-primary me-2 float-end"
-      >
-        Update Completed
-      </a>
-      <label> <input type="checkbox" className="form-checkbox" onChange={(e) =>
-          setAssignment({ ...assignment, completed: e.target.checked })
-        }
-         /> Completed</label>
+      <label>
+        Completed State:
+        <input
+          type="text"
+          value={assignment.completed}
+          readOnly
+          class="form-control mb-2 w-75"
+        />
+      </label>
 
+      <label>
+        {" "}
+        <input
+          type="checkbox"
+          checked={assignment.completed ? "checked" : ""}
+          className="form-checkbox"
+          onChange={(e) => updateCompleted(e)}
+        />{" "}
+        Completed
+      </label>
 
       <h4>Retrieving Objects</h4>
-      <a
-        href="http://localhost:4000/a5/assignment"
-        className="btn btn-primary me-2"
-      >
-        Get Assignment
-      </a>
+      <button onClick={fetchAssignment}
+              className="w-100 btn btn-danger mb-2">
+        Fetch Assignment
+      </button>
       <h4>Retrieving Properties</h4>
       <a
         href="http://localhost:4000/a5/assignment/title"
