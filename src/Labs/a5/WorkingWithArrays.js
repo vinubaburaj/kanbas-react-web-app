@@ -4,6 +4,7 @@ import axios from "axios";
 function WorkingWithArrays() {
   const API = "http://localhost:4000/a5/todos";
 
+  const [errorMessage, setErrorMessage] = useState(null);
   const [todo, setTodo] = useState({
     id: 1,
     title: "NodeJS Assignment",
@@ -13,6 +14,32 @@ function WorkingWithArrays() {
   });
 
   const [todos, setTodos] = useState([]);
+
+  const updateTodo = async () => {
+    try {
+      const response = await axios.put(`${API}/${todo.id}`, todo);
+      setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
+      setTodo({});
+    } catch (error) {
+      console.log(error);
+      setErrorMessage(error.response.data.message);
+    }
+  };
+
+  const deleteTodo = async (todo) => {
+    try {
+      const response = await axios.delete(`${API}/${todo.id}`);
+      setTodos(todos.filter((t) => t.id !== todo.id));
+    } catch (error) {
+      console.log(error);
+      setErrorMessage(error.response.data.message);
+    }
+  };
+
+  const postTodo = async () => {
+    const response = await axios.post(API, todo);
+    setTodos([...todos, response.data]);
+  };
 
   const fetchTodos = async () => {
     const response = await axios.get(API);
@@ -142,6 +169,45 @@ function WorkingWithArrays() {
         onChange={(e) => setTodo({ ...todo, title: e.target.value })}
         className="form-control w-100"
       />
+      <textarea
+        onChange={(e) => setTodo({ ...todo, description: e.target.value })}
+        value={todo.description}
+        type="text"
+        className="form-control w-100"
+      />
+      <input
+        onChange={(e) =>
+          setTodo({
+            ...todo,
+            due: e.target.value,
+          })
+        }
+        value={todo.due}
+        type="date"
+        className="form-control w-50"
+      />
+      <label>
+        <input
+          onChange={(e) =>
+            setTodo({
+              ...todo,
+              completed: e.target.checked,
+            })
+          }
+          value={todo.completed}
+          type="checkbox"
+          className="form-checkbox"
+        />
+        Completed
+      </label>
+      <br />
+      <button onClick={postTodo} className="btn btn-warning mb-2 w-100">
+        Post Todo
+      </button>
+
+      <button onClick={updateTodo} className="btn btn-secondary mb-2 w-100">
+        Update Todo
+      </button>
 
       <button onClick={createTodo} className="btn btn-primary mb-2 w-100">
         Create Todo
@@ -149,6 +215,10 @@ function WorkingWithArrays() {
       <button onClick={updateTitle} className="btn btn-success mb-2 w-100">
         Update Title
       </button>
+
+      {errorMessage && (
+        <div className="alert alert-danger mb-2 mt-2">{errorMessage}</div>
+      )}
 
       <ul className="list-group">
         {todos.map((todo) => (
@@ -160,10 +230,10 @@ function WorkingWithArrays() {
               Edit
             </button>
             <button
-              onClick={() => removeTodo(todo)}
+              onClick={() => deleteTodo(todo)}
               className="btn btn-danger float-end"
             >
-              Remove
+              Delete
             </button>
             {todo.title}
           </li>
