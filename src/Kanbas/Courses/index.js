@@ -15,11 +15,26 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import AddAssignment from "./Assignments/AddAssignment";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
   const windowLocation = useLocation();
-  const course = courses.find((course) => course._id === courseId);
+
+  const URL = "http://localhost:4000/api/courses";
+  const [ course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  }
+
+  useEffect(() => {
+    findCourseById(courseId);
+  },[courseId]);
+
+
+  // const course = courses.find((course) => course._id === courseId);
   const link = windowLocation.pathname.split("/"); /* To display breadcrumbs */
   return (
     <div className="wd-course-screen">
