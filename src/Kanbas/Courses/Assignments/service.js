@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const COURSES_URL = "http://localhost:4000/api/courses";
-const ASSIGNMENT_URL = "http://localhost:4000/api/assignments";
+const COURSES_URL = "https://kanbas-node-server-app-7ro2.onrender.com/api/courses";
+const ASSIGNMENT_URL = "https://kanbas-node-server-app-7ro2.onrender.com/api/assignments";
 
 export const findAssignmentsForCourses = async (courseId) => {
   const response = await axios.get(`${COURSES_URL}/${courseId}/assignments`);
