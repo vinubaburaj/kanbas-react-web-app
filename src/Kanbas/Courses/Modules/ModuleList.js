@@ -41,6 +41,7 @@ function ModuleList() {
   const handleUpdateModule = async (module) => {
     const status = await service.updateModule(module);
     dispatch(updateModule(module));
+    dispatch(setModule({ name: "Module Name", description: "Module Description" }));
   }
 
   return (
