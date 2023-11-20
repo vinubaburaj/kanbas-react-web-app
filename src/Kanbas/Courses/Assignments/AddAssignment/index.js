@@ -1,6 +1,7 @@
 import { useNavigate, useParams, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { addAssignment, selectAssignment } from "../assignmentsReducer";
+import * as service from '../service';
 
 const AddAssignment = () => {
   const { courseId } = useParams();
@@ -10,8 +11,9 @@ const AddAssignment = () => {
   );
   const dispatch = useDispatch();
 
-  const handleSave = () => {
-    dispatch(addAssignment({ ...assignment, course: courseId }));
+  const handleSave = async() => {
+    const response = await service.createAssignmentForCourse(courseId, assignment);
+    dispatch(addAssignment(response.data));
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
 

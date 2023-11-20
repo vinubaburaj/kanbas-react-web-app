@@ -11,10 +11,14 @@ import {
   updateAssignment,
   deleteAssignment,
   selectAssignment,
+  setAssignments,
 } from "./assignmentsReducer";
+import * as service from "./service";
+import { useState, useEffect } from "react";
 
 function Assignments() {
   const { courseId } = useParams();
+  console.log(courseId);
   const assignments = useSelector(
     (state) => state.assignmentsReducer.assignments
   );
@@ -22,6 +26,19 @@ function Assignments() {
     (assignment) => assignment.course === courseId
   );
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    service
+      .findAssignmentsForCourses(courseId)
+      .then((fetchedAssignments) =>
+        dispatch(setAssignments(fetchedAssignments))
+      );
+  }, [courseId]);
+
+  const handleDeleteAssignment = async (assignmentId) => {
+    const status = await service.deleteAssignment(assignmentId);
+    dispatch(deleteAssignment(assignmentId));
+  };
 
   return (
     <div className="me-5">
@@ -76,12 +93,11 @@ function Assignments() {
                 class="btn btn-danger me-1"
                 onClick={(e) => {
                   e.preventDefault();
-                  dispatch(deleteAssignment(assignment._id))
+                  handleDeleteAssignment(assignment._id);
                 }}
               >
                 Delete
               </button>
-            
 
               <AiFillCheckCircle color="green" />
               <HiOutlineEllipsisVertical />
