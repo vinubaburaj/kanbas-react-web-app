@@ -142,6 +142,17 @@ function Account() {
           )}
         </div>
       )}
+      {!account && (
+        <div>
+            <h5>Not logged in</h5>
+            <br />
+            <Link
+            to="/Kanbas/signin"
+            className="mt-3 btn btn-primary w-25">
+            Go to Sign In Page
+            </Link>
+        </div>
+      )}
     </div>
   );
 }
