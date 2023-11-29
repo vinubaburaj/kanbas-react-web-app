@@ -18,7 +18,7 @@ import { useState, useEffect } from "react";
 
 function Assignments() {
   const { courseId } = useParams();
-  console.log(courseId);
+  // console.log(courseId);
   const assignments = useSelector(
     (state) => state.assignmentsReducer.assignments
   );
