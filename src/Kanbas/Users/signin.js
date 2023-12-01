@@ -9,7 +9,12 @@ function Signin() {
   const navigate = useNavigate();
   const signin = async () => {
     const response = await service.signin(credentials);
-    navigate("/Kanbas/account");
+
+    // Checking if user could be fetched, then navigating to their profile page
+    if(response){
+        navigate("/Kanbas/account");
+    }
+
   };
   return (
     <div>
